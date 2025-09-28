@@ -1,0 +1,5 @@
+* [🏠 Home](/)
+* [💻 Tutorial Dasar](tutorial.md)
+* [⚡ Cheat Sheet](cheatsheet.md)
+* [🚀 Projects](projects.md)
+* [📚 About TalentGroup](about.md)

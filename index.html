@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a>nama gua adrian</a>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <title>TalentGroup IT Docs</title>
+    <meta
+      name="description"
+      content="Dokumentasi, catatan, dan cheat sheet untuk anak IT 🚀"
+    />
+
+    <!-- Tema hacker-style (dark mode) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: #0d1117;
+        color: #e6edf3;
+      }
+      .app-name {
+        font-weight: bold;
+        color: #00ff95;
+        letter-spacing: 1px;
+      }
+      .sidebar {
+        background: #161b22;
+      }
+      pre code {
+        font-size: 14px;
+        border-radius: 8px;
+      }
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.6;
+      }
+      /* Toggle button biar selalu muncul */
+      .sidebar-toggle {
+        display: block !important;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: #161b22;
+        border: none;
+        color: #00ff95;
+        padding: 8px 12px;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script>
+      window.$docsify = {
+        name: "TalentGroup IT Docs 💻",
+        repo: "https://github.com/username/repo", // ganti sesuai repo GitHub lo
+        logo: "images/terminal.png",
+
+        loadSidebar: true,
+        subMaxLevel: 3,
+        auto2top: true,
+
+        search: {
+          placeholder: "🔍 Cari materi IT...",
+          noData: "Tidak ada hasil ditemukan.",
+          depth: 2,
+        },
+
+        // Copy button di code block
+        copyCode: {
+          buttonText: "📋 Copy",
+          errorText: "Gagal",
+          successText: "Disalin!",
+        },
+
+        // Sidebar collapse plugin
+        sidebarDisplayLevel: 1,
+      };
+    </script>
+
+    <!-- Docsify core -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+    <footer>
+      Made with ❤️ by TalentGroup — Keep Coding!
+    </footer>
+  </body>
 </html>
